@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FE866E31EAF5B57004C560F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE866E21EAF5B57004C560F /* AppDelegate.swift */; };
+		3FE866E51EAF5B57004C560F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE866E41EAF5B57004C560F /* ViewController.swift */; };
+		3FE866EA1EAF5B57004C560F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE866E91EAF5B57004C560F /* Assets.xcassets */; };
+		3FE866ED1EAF5B57004C560F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE866EB1EAF5B57004C560F /* LaunchScreen.storyboard */; };
+		3FE866F81EAF5C79004C560F /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE866F41EAF5C72004C560F /* Realm.framework */; };
+		3FE866F91EAF5C79004C560F /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE866F41EAF5C72004C560F /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3FE866FA1EAF5C79004C560F /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE866F51EAF5C72004C560F /* RealmSwift.framework */; };
+		3FE866FB1EAF5C79004C560F /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE866F51EAF5C72004C560F /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3FE867041EAF5E4C004C560F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE866FE1EAF5E3C004C560F /* Alamofire.framework */; };
+		3FE867051EAF5E4C004C560F /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE866FE1EAF5E3C004C560F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3FE867061EAF5E4C004C560F /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE866FF1EAF5E3C004C560F /* AlamofireObjectMapper.framework */; };
+		3FE867071EAF5E4C004C560F /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE866FF1EAF5E3C004C560F /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3FE867081EAF5E4C004C560F /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE867001EAF5E3C004C560F /* ObjectMapper.framework */; };
+		3FE867091EAF5E4C004C560F /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE867001EAF5E3C004C560F /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3FE8670F1EAF5F31004C560F /* SwiftValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE8670D1EAF5F26004C560F /* SwiftValidator.framework */; };
+		3FE867101EAF5F31004C560F /* SwiftValidator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE8670D1EAF5F26004C560F /* SwiftValidator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3FE867121EAF5F87004C560F /* VideoDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE867111EAF5F87004C560F /* VideoDataService.swift */; };
+		3FE867141EAF5FF7004C560F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE867131EAF5FF7004C560F /* User.swift */; };
+		3FE867161EAF600D004C560F /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE867151EAF600D004C560F /* Video.swift */; };
+		3FE867181EAF608A004C560F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE867171EAF608A004C560F /* Main.storyboard */; };
+		3FE8671B1EAF609D004C560F /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE867191EAF609D004C560F /* VideoCell.swift */; };
+		3FE8671C1EAF609D004C560F /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FE8671A1EAF609D004C560F /* VideoCell.xib */; };
+		3FE867231EAF60A9004C560F /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE8671E1EAF60A9004C560F /* FeaturedViewController.swift */; };
+		3FE867241EAF60A9004C560F /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE8671F1EAF60A9004C560F /* NewViewController.swift */; };
+		3FE867251EAF60A9004C560F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE867201EAF60A9004C560F /* LoginViewController.swift */; };
+		3FE867261EAF60A9004C560F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE867211EAF60A9004C560F /* FeedViewController.swift */; };
+		3FE8672D1EAF6DE5004C560F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE8672C1EAF6DE5004C560F /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3FE866FC1EAF5C7A004C560F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3FE866FB1EAF5C79004C560F /* RealmSwift.framework in Embed Frameworks */,
+				3FE867101EAF5F31004C560F /* SwiftValidator.framework in Embed Frameworks */,
+				3FE867051EAF5E4C004C560F /* Alamofire.framework in Embed Frameworks */,
+				3FE867091EAF5E4C004C560F /* ObjectMapper.framework in Embed Frameworks */,
+				3FE866F91EAF5C79004C560F /* Realm.framework in Embed Frameworks */,
+				3FE867071EAF5E4C004C560F /* AlamofireObjectMapper.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3FE866DF1EAF5B57004C560F /* VIDME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIDME.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE866E21EAF5B57004C560F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FE866E41EAF5B57004C560F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FE866E91EAF5B57004C560F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FE866EC1EAF5B57004C560F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FE866EE1EAF5B57004C560F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FE866F41EAF5C72004C560F /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = VIDME/Realm.framework; sourceTree = "<group>"; };
+		3FE866F51EAF5C72004C560F /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = VIDME/RealmSwift.framework; sourceTree = "<group>"; };
+		3FE866FE1EAF5E3C004C560F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/VIDME-biilesyazihoaeanxelibgphuvkb/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		3FE866FF1EAF5E3C004C560F /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = "../../../Library/Developer/Xcode/DerivedData/VIDME-biilesyazihoaeanxelibgphuvkb/Build/Products/Debug-iphonesimulator/AlamofireObjectMapper/AlamofireObjectMapper.framework"; sourceTree = "<group>"; };
+		3FE867001EAF5E3C004C560F /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../../Library/Developer/Xcode/DerivedData/VIDME-biilesyazihoaeanxelibgphuvkb/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
+		3FE8670D1EAF5F26004C560F /* SwiftValidator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftValidator.framework; path = "../../../Library/Developer/Xcode/DerivedData/VIDME-biilesyazihoaeanxelibgphuvkb/Build/Products/Debug-iphonesimulator/SwiftValidator/SwiftValidator.framework"; sourceTree = "<group>"; };
+		3FE867111EAF5F87004C560F /* VideoDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDataService.swift; sourceTree = "<group>"; };
+		3FE867131EAF5FF7004C560F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3FE867151EAF600D004C560F /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		3FE867171EAF608A004C560F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3FE867191EAF609D004C560F /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		3FE8671A1EAF609D004C560F /* VideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		3FE8671E1EAF60A9004C560F /* FeaturedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
+		3FE8671F1EAF60A9004C560F /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		3FE867201EAF60A9004C560F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3FE867211EAF60A9004C560F /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		3FE8672C1EAF6DE5004C560F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		86B978BEBA2A36665FEA2DD8 /* Pods-VIDME.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIDME.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIDME/Pods-VIDME.debug.xcconfig"; sourceTree = "<group>"; };
+		96A48DDB558F6007A6497D37 /* Pods-VIDME.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIDME.release.xcconfig"; path = "Pods/Target Support Files/Pods-VIDME/Pods-VIDME.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FE866DC1EAF5B57004C560F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE867081EAF5E4C004C560F /* ObjectMapper.framework in Frameworks */,
+				3FE867041EAF5E4C004C560F /* Alamofire.framework in Frameworks */,
+				3FE867061EAF5E4C004C560F /* AlamofireObjectMapper.framework in Frameworks */,
+				3FE866F81EAF5C79004C560F /* Realm.framework in Frameworks */,
+				3FE866FA1EAF5C79004C560F /* RealmSwift.framework in Frameworks */,
+				3FE8670F1EAF5F31004C560F /* SwiftValidator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		083E0170B6E1BF1807015E37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86B978BEBA2A36665FEA2DD8 /* Pods-VIDME.debug.xcconfig */,
+				96A48DDB558F6007A6497D37 /* Pods-VIDME.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3FE866D61EAF5B57004C560F = {
+			isa = PBXGroup;
+			children = (
+				3FE866E11EAF5B57004C560F /* VIDME */,
+				3FE866E01EAF5B57004C560F /* Products */,
+				083E0170B6E1BF1807015E37 /* Pods */,
+				6D8BA61995B183D1E8D0107C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3FE866E01EAF5B57004C560F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FE866DF1EAF5B57004C560F /* VIDME.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FE866E11EAF5B57004C560F /* VIDME */ = {
+			isa = PBXGroup;
+			children = (
+				3FE8672A1EAF6232004C560F /* Services */,
+				3FE867281EAF6207004C560F /* Controllers */,
+				3FE867271EAF61EF004C560F /* Models */,
+				3FE867291EAF6213004C560F /* Cells */,
+				3FE8672B1EAF6253004C560F /* Supporting Files */,
+			);
+			path = VIDME;
+			sourceTree = "<group>";
+		};
+		3FE867271EAF61EF004C560F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3FE867131EAF5FF7004C560F /* User.swift */,
+				3FE867151EAF600D004C560F /* Video.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3FE867281EAF6207004C560F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3FE8671E1EAF60A9004C560F /* FeaturedViewController.swift */,
+				3FE8671F1EAF60A9004C560F /* NewViewController.swift */,
+				3FE867201EAF60A9004C560F /* LoginViewController.swift */,
+				3FE867211EAF60A9004C560F /* FeedViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3FE867291EAF6213004C560F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3FE867191EAF609D004C560F /* VideoCell.swift */,
+				3FE8671A1EAF609D004C560F /* VideoCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		3FE8672A1EAF6232004C560F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3FE867111EAF5F87004C560F /* VideoDataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		3FE8672B1EAF6253004C560F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FE8672C1EAF6DE5004C560F /* Constants.swift */,
+				3FE866E21EAF5B57004C560F /* AppDelegate.swift */,
+				3FE866E41EAF5B57004C560F /* ViewController.swift */,
+				3FE866E91EAF5B57004C560F /* Assets.xcassets */,
+				3FE867171EAF608A004C560F /* Main.storyboard */,
+				3FE866EB1EAF5B57004C560F /* LaunchScreen.storyboard */,
+				3FE866EE1EAF5B57004C560F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D8BA61995B183D1E8D0107C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FE8670D1EAF5F26004C560F /* SwiftValidator.framework */,
+				3FE866FE1EAF5E3C004C560F /* Alamofire.framework */,
+				3FE866FF1EAF5E3C004C560F /* AlamofireObjectMapper.framework */,
+				3FE867001EAF5E3C004C560F /* ObjectMapper.framework */,
+				3FE866F41EAF5C72004C560F /* Realm.framework */,
+				3FE866F51EAF5C72004C560F /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FE866DE1EAF5B57004C560F /* VIDME */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FE866F11EAF5B57004C560F /* Build configuration list for PBXNativeTarget "VIDME" */;
+			buildPhases = (
+				1CF74103CB2807D02FABEBFC /* [CP] Check Pods Manifest.lock */,
+				3FE866DB1EAF5B57004C560F /* Sources */,
+				3FE866DC1EAF5B57004C560F /* Frameworks */,
+				3FE866DD1EAF5B57004C560F /* Resources */,
+				3FE866FC1EAF5C7A004C560F /* Embed Frameworks */,
+				3FE866FD1EAF5C80004C560F /* ShellScript */,
+				F7B9B418DA3872E4D61C8024 /* [CP] Embed Pods Frameworks */,
+				7DB870B06DE447C61D51D0B8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VIDME;
+			productName = VIDME;
+			productReference = 3FE866DF1EAF5B57004C560F /* VIDME.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FE866D71EAF5B57004C560F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Hyzhnyak Evgen";
+				TargetAttributes = {
+					3FE866DE1EAF5B57004C560F = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = P53Y8U6Y9N;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3FE866DA1EAF5B57004C560F /* Build configuration list for PBXProject "VIDME" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FE866D61EAF5B57004C560F;
+			productRefGroup = 3FE866E01EAF5B57004C560F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FE866DE1EAF5B57004C560F /* VIDME */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FE866DD1EAF5B57004C560F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE867181EAF608A004C560F /* Main.storyboard in Resources */,
+				3FE8671C1EAF609D004C560F /* VideoCell.xib in Resources */,
+				3FE866ED1EAF5B57004C560F /* LaunchScreen.storyboard in Resources */,
+				3FE866EA1EAF5B57004C560F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CF74103CB2807D02FABEBFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3FE866FD1EAF5C80004C560F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+		7DB870B06DE447C61D51D0B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIDME/Pods-VIDME-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7B9B418DA3872E4D61C8024 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIDME/Pods-VIDME-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FE866DB1EAF5B57004C560F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE867141EAF5FF7004C560F /* User.swift in Sources */,
+				3FE867121EAF5F87004C560F /* VideoDataService.swift in Sources */,
+				3FE866E51EAF5B57004C560F /* ViewController.swift in Sources */,
+				3FE866E31EAF5B57004C560F /* AppDelegate.swift in Sources */,
+				3FE867161EAF600D004C560F /* Video.swift in Sources */,
+				3FE867241EAF60A9004C560F /* NewViewController.swift in Sources */,
+				3FE867261EAF60A9004C560F /* FeedViewController.swift in Sources */,
+				3FE867231EAF60A9004C560F /* FeaturedViewController.swift in Sources */,
+				3FE867251EAF60A9004C560F /* LoginViewController.swift in Sources */,
+				3FE8671B1EAF609D004C560F /* VideoCell.swift in Sources */,
+				3FE8672D1EAF6DE5004C560F /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3FE866EB1EAF5B57004C560F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FE866EC1EAF5B57004C560F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FE866EF1EAF5B57004C560F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FE866F01EAF5B57004C560F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FE866F21EAF5B57004C560F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B978BEBA2A36665FEA2DD8 /* Pods-VIDME.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = P53Y8U6Y9N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VIDME",
+				);
+				INFOPLIST_FILE = VIDME/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hyzhnyakevgen.VIDME;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3FE866F31EAF5B57004C560F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A48DDB558F6007A6497D37 /* Pods-VIDME.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = P53Y8U6Y9N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VIDME",
+				);
+				INFOPLIST_FILE = VIDME/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hyzhnyakevgen.VIDME;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FE866DA1EAF5B57004C560F /* Build configuration list for PBXProject "VIDME" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE866EF1EAF5B57004C560F /* Debug */,
+				3FE866F01EAF5B57004C560F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FE866F11EAF5B57004C560F /* Build configuration list for PBXNativeTarget "VIDME" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE866F21EAF5B57004C560F /* Debug */,
+				3FE866F31EAF5B57004C560F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FE866D71EAF5B57004C560F /* Project object */;
+}
